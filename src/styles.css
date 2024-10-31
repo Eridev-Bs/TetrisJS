@@ -1,0 +1,41 @@
+:root {
+    color-scheme: dark light;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    gap: 20px; /* Espacio entre el canvas y el info-grid */
+}
+
+.base {
+    width: 300px; /* Ajusta el ancho del canvas */
+    height: 600px; /* Ajusta la altura del canvas */
+    border: 1px solid #ccc; /* Borde opcional para el canvas */
+    border-radius: 8px; /* Esquinas redondas para el canvas */
+}
+
+.info-grid {
+    width: 150px; /* Ancho del grid */
+    padding: 10px;
+    background: rgba(240, 240, 240, 0.5); /* Fondo blanco con transparencia */
+    border: 1px solid rgba(204, 204, 204, 0.5); /* Borde con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de difuminado */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.info-grid p {
+    margin: 5px 0; /* Espaciado entre líneas */
+}
